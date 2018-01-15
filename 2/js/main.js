@@ -25,3 +25,25 @@ function outer () {
 const outerFunction = outer()
 
 outerFunction()
+
+// objects
+
+const computer = {
+  keyboard: 'yes',
+  'ports of computer': 'loadss'
+}
+console.log(computer.keyboard)
+console.log(computer['ports of computer'])
+
+const computerKeyboardAvailability = computer.keyboard
+const computerPortsNumber = computer['ports of computer']
+
+console.log(computerKeyboardAvailability + ' ' + computerPortsNumber)
+
+const methodExample = {
+  myMeth: function (isItBad) {
+    console.log('meth' + isItBad)
+  }
+}
+
+methodExample.myMeth(' is bad')
