@@ -97,15 +97,20 @@ for (let x of numbers) {
 
 // scegliere determinati oggetti di un array
 // primo array con tutti gli elementi
-const numbers2 = [100, 102, 1, 5]
+const numbers2 = [103, 100, 102, 1, 2, 3, 4, 5]
 // nuovo array dove finiranno gli elementi scelti, inizializzato con variabile let in modo da
 // poter essere valorizzata dopo
 let biggerThenFive = []
+let biggerThenTen = []
 
 for (let xxx of numbers2) {
   if (xxx > 5) {
-    biggerThenFive = biggerThenFive.concat(xxx)
+    biggerThenFive = biggerThenFive.concat(xxx * 5)
+  }
+  if (xxx > 10) {
+    biggerThenTen = biggerThenTen.concat(xxx)
   }
 }
 // lo usi fuori dal loop senno ti dà prima il primo numero, poi su una nuova riga quello di prima piu il secondo
 console.log(biggerThenFive)
+console.log(biggerThenTen)
